@@ -64,7 +64,7 @@ describe('LinkedList', () => {
     })
 
     test('should remove node from front of empty list', () => {
-        list.removeFront()
+        list.removeFirst()
         expect(list.size).toBe(0)
         expect(list.head).toBe(null)
         expect(list.tail).toBe(null)
@@ -72,7 +72,7 @@ describe('LinkedList', () => {
 
     test('should remove node from front of list with one node', () => {
         list.append(3)
-        list.removeFront()
+        list.removeFirst()
         expect(list.size).toBe(0)
         expect(list.head).toBe(null)
         expect(list.tail).toBe(null)
